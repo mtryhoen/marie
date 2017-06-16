@@ -1,0 +1,258 @@
+@import url("responsive.css");
+*{box-sizing:border-box;}
+img{
+    height:auto;
+    max-width:100%;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+}
+html, body{
+    font-family: 'Federo', cursive;
+    font-size: 18px;
+    line-height: 1.4;
+    height:100%;
+    
+    margin:0;
+    padding:0;
+    background-color:#cfd8dc;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+h1{
+    margin-left:5px;
+}
+h2{
+    margin-left:15px;
+}
+p{
+    margin-left:10px;
+}
+
+.header{
+    position: fixed;
+    left:0;
+    right:0;
+    height:86px;
+    line-height:86px;
+    color:#FFF;
+    background-color:#616161;
+}
+.header__logo{
+    background:url(images/justice.jpg);
+    background-size:contain;
+    height:86px;
+    width:86px;
+    margin-right:20px;
+    margin-left:10px;
+    float:right;
+    left:0;
+    top:0;
+    vertical-align: middle;
+}
+.container{
+    display:inline;
+    clear:both;*/
+    overflow:auto;
+    margin: 0 40px;
+    padding-top:86px;
+}
+
+.site__image{
+    float:right;
+    width:25%;
+    margin-top:100px;
+    margin-right:20px;
+    margin-left:-20px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    background-color: #cfd8dc;
+    transition-duration: 0.5s;
+}
+.site__image__c{
+    float:right;
+    width:20%;
+    margin-top:100px;
+    margin-right:20px;
+    margin-left:-20px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    background-color:#fff; 
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+.site__image:hover{
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+
+.site__image:hover .contacts{
+    display:block;
+    opacity: 1;
+}
+.card__image{
+    margin-top:0px;
+}
+
+.contacts{
+    margin-right: 1px;
+    opacity:0;
+    transition-duration: 0.7s;    
+}
+.contacts__c{
+    display:none;
+}
+.coord1{
+    display: block;
+    padding:10px;
+}
+.icon1{
+    display: inline-block;
+    background:url(images/adresse.png);
+    background-size:contain;
+    height:15px;
+    width:15px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.address1{
+    display: inline-block;
+    vertical-align: middle;
+}
+.address2{
+    margin-left: 35px;
+}
+.coord2{
+    display: block;
+    padding:10px;
+}
+.icon2{
+    display: inline-block;
+    background:url(images/tel.png);
+    background-size:contain;
+    height:15px;
+    width:15px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.tel{
+    display: inline-block;
+    vertical-align: middle;
+}
+.coord3{
+    display: block;
+    padding:10px;
+}
+.icon3{
+    display: inline-block;
+    background:url(images/mail.png);
+    background-size:contain;
+    height:15px;
+    width:15px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.mail{
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+.site__top{
+    
+    width:65%;
+    float:left;
+    /*position: relative;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top:100px;
+    margin-left: 10px;
+    border-style:solid;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+.site__top__c{
+    
+    width:70%;
+    float:left;
+    /*position: relative;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top:100px;
+    margin-left: 10px;
+}
+
+.site__text{
+    width:100%;
+    float:left;
+    padding-right: 10px;
+}
+
+.site__list{
+    width:40%;
+    float:left;
+}
+
+.site__text2{
+    width:100%;
+    float:left;
+}
+
+.header__logo{
+    float:left;
+    font-weight:bold;
+    padding:  0 25px;
+    
+}
+
+
+.menu{
+    float:left;
+}
+
+.menu a{
+    padding:  0 10px;
+    
+}
+
+.menu a:hover{
+    color:#37474f;
+}
+
+.site__top__c{
+    border-style:solid;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+
+.footer{
+    font-size:15px;
+    color:#fff;
+    left:0;
+    right:0;
+    bottom:0;
+    height:40px;
+    line-height:40px;
+    background-color: #616161;
+    margin-top:60px;
+}
+
+.icon--linkedin{
+    background:url(images/linkedin.jpg);
+    background-size:contain;
+    height:30px;
+    width:30px;
+    margin-right:20px;
+    margin-top:5px;
+    float:right;
+    right:0;
+    bottom:0;
+    vertical-align: middle;
+}
+.copyright{
+    margin-left:20px;
+}
+
+.link__c{
+    color:#0091ea;
+    text-decoration: underline;
+}

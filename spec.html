@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Avocate spécialisée en droit du travail, droit de la famille, droit administratif, droit commercial."/>
+    <link rel="stylesheet" type="text/css" href="stylemf.css">
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+    <title>Avocat Charleroi Marie Fadeur Fiche d'informations légales</title>
+</head>
+
+<body>
+    <header class=header>
+        <a href="#" class="header__logo" id="header__logo"></a>
+        <nav class=menu>
+            <a href="index.html">Présentation</a>
+            <a href="bio.html">Activités préférentielles</a>
+            <a href="spec.html">Fiche d'informations légales</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<div class=container id="site__container">
+    <article class="site__image">
+            <div class="card__image">
+                <img src="images/mf1.jpg">
+                <!--</div class="card__body">-->
+                    <p class="contacts">
+                        <b>Cabinet principal :</b> Rue Léon Bernus, 66 à 6000 Charleroi<br>
+                        <b>Tél:</b> 071/32.74.58<br>
+                        <b>GSM (uniquement du lundi au vendredi de 9h à 18h) :</b> 0477/49.11.32<br>
+                        <b>Fax:</b> 071/ 31.13.37<br>
+                        <b>E-mail:</b> <a href="#" name="emailLink" id="emailLink" class="link__c"> m.fadeur2@avocat.be</a> <br>
+                        <b>Numéro d'entreprise et TVA :</b> 0816.311.715<br>
+                    </p>
+                <!--</div>-->
+            </div>
+        </article>
+    <div class=site__top>
+        <div class=site__text>
+            <p>En exécution de l’article 18 de la loi du 26 mars 2010 sur les services et après l’entrée en vigueur du livre III du CDE, en exécution de l’article III-74 du Code de Droit Economique, les informations légales communiquées aux clients sont les suivantes :</p>
+            <p>1. <b>Nom : </b>Marie FADEUR </p>
+            <p>2. <b>Adresse du cabinet d’avocat : </b>       66, rue Léon Bernus à 6000 Charleroi</p>
+            <p>3. <b>Adresse électronique : </b>m.fadeur2@avocat.be</p>
+            <p>4. <b>Numéro d’entreprise : </b>BE 0816.311.715</p>
+            <p>5. <b>Organisation professionnelle : </b>      Barreau de Charleroi
+            Palais de Justice
+            Boulevard Général Michel 
+            6000 Charleroi</p>
+            <p>6. <b>Titre professionnel : </b>           Avocat </p>
+            <p>7. <b>Pays ayant octroyé ce
+            titre professionnel :</b> Belgique</p>
+            <p>8. <b>Conditions générales 
+            applicables : </b>Néant</p>
+            <p>9. <b>Prix du service déterminé 
+            au préalable : </b>Non déterminé</p>
+            <p>10. <b>Caractéristiques de la
+            prestation de services : </b>Activités d’avocat
+            Code Nacebel 2008 : 69101</p>
+            <p>11. <b>Assurance RC professionnelle :</b>      SA ETHIAS
+            Rue des Croisiers, 24
+            4000 Liège
+            Tel. 04/220.31.11.
+            Couverture géographique de l’assurance :
+            Le monde entier à l’exception des Etats Unis d’Amérique et le Canada</p>
+        </div>
+    </div>
+    
+</div>
+<br clear="both">
+<footer class="footer">
+        <span class="copyright"></span>Copyright
+        <a href="https://www.linkedin.com/in/mariefadeur" target="_blank"><span class="icon icon--linkedin"></span></a>
+
+</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    /*alert("test");*/
+    $('#header__logo').click(function(e){
+        e.preventDefault();
+        $("body").toggleClass('wsidebar');
+    });
+    $('#site__container').click(function(e){
+        e.preventDefault();
+        $("body").removeClass('wsidebar');
+    });
+});
+
+$(function () {
+  $('#emailLink').on('click', function (event) {
+      event.preventDefault();
+    //alert("Huh");
+    var email = 'm.fadeur2@avocat.be';
+    var subject = "Demande d'informations";
+    window.location = 'mailto:' + email + '?subject=' + subject;
+  });
+});
+
+</script>
+</body>
+</html>

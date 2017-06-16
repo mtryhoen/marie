@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Avocate spécialisée en droit du travail, droit de la famille, droit administratif, droit commercial."/>
+    <link rel="stylesheet" type="text/css" href="stylemf.css">
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+    <title>Avocat Charleroi Marie Fadeur Activités préférentielles</title>
+</head>
+
+<body>
+    <header class=header>
+        <a href="#" class="header__logo" id="header__logo"></a>
+        <nav class=menu>
+            <a href="index.html">Présentation</a>
+            <a href="bio.html">Activités préférentielles</a>
+            <a href="spec.html">Fiche d'informations légales</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<div class=container id="site__container">
+    <article class="site__image">
+            <div class="card__image">
+                <img src="images/mf1.jpg">
+                <!--</div class="card__body">-->
+                    <p class="contacts">
+                        <b>Cabinet principal :</b> Rue Léon Bernus, 66 à 6000 Charleroi<br>
+                        <b>Tél:</b> 071/32.74.58<br>
+                        <b>GSM (uniquement du lundi au vendredi de 9h à 18h) :</b> 0477/49.11.32<br>
+                        <b>Fax:</b> 071/ 31.13.37<br>
+                        <b>E-mail:</b> <a href="#" name="emailLink" id="emailLink" class="link__c"> m.fadeur2@avocat.be</a> <br>
+                        <b>Numéro d'entreprise et TVA :</b> 0816.311.715<br>
+                    </p>
+                <!--</div>-->
+            </div>
+        </article>
+    <div class=site__top>
+        <div class=site__text>
+            <h1>Droit social</h1>
+            <h2>Droit du travail</h2>
+            <p>Rédaction de contrats de travail, élaboration de règlements de travail, exécution et suspension du contrat de travail (maladie, maternité, congés,…), rupture du contrat de travail (préavis, indemnité compensatoire de préavis, motif grave, licenciement abusif, négociations en fin de contrat,...), droit de la fonction publique, délégations syndicales, grèves, travailleurs protégés.</p>
+            <h2>Droit de la sécurité sociale</h2> 
+            <p>Toutes questions, avis et procédures concernant l’assujettissement des travailleurs au régime de sécurité sociale des travailleurs salariés ou indépendants (ONSS, l’ INASTI), le chômage (ONEm), le régime de la prépension, le revenu garanti aux personnes âgées, les indemnités maladie-invalidité (litiges pour ou contre les mutuelles), les allocations  familiales, les accidents du travail, les maladies professionnelles (FMP),les  allocations pour personnes handicapées, l’aide sociale.</p>
+            <h2>Droit pénal social</h2> 
+            <p>Relations et contrôles de l’Inspection sociale, amendes administratives, respect de la législation sociale.</p>
+            <h1>Droit de la famille</h1>
+            <h2>Droit des personnes</h2>
+            <p> Mariage, divorce, séparation, hébergement d’enfants, filiation, adoption,…</p>
+            <h2>Droit patrimonial de la famille</h2>
+            <p>Pension alimentaire, part contributive, régimes matrimoniaux, donations, successions,…</p>
+            <h1>Droit des contrats et droit commercial</h1>
+            <p>Droit commun des obligations<br>
+            Contrats spéciaux (vente, entreprise, bail à loyer…).<br>
+            Contrats commerciaux notamment en droit de la construction.<br>
+            Elaboration de conditions générales de vente.
+            </p>
+            <h1>Droit de la circulation routière</h1>
+            <p>Défense pénale et civile devant le Tribunal de Police.<br>
+            Responsabilité civile et assurances.</p>
+            <h1>Droit administratif</h1>
+            <p>Droit des marchés publics, droit de l'urbanisme, droit de la fonction publique.<br>
+            </p><br>
+            
+        </div>
+    </div>
+    
+</div>
+<br clear="both">
+<footer class="footer">
+        <span class="copyright"></span>Copyright
+        <a href="https://www.linkedin.com/in/mariefadeur" target="_blank"><span class="icon icon--linkedin"></span></a>
+
+</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	/*alert("test");*/
+    $('#header__logo').click(function(e){
+        e.preventDefault();
+        $("body").toggleClass('wsidebar');
+    });
+    $('#site__container').click(function(e){
+        e.preventDefault();
+        $("body").removeClass('wsidebar');
+    });
+});
+
+$(function () {
+  $('#emailLink').on('click', function (event) {
+      event.preventDefault();
+    //alert("Huh");
+    var email = 'm.fadeur2@avocat.be';
+    var subject = "Demande d'informations";
+    window.location = 'mailto:' + email + '?subject=' + subject;
+  });
+});
+
+</script>
+</body>
+</html>

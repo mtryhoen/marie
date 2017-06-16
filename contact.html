@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Avocate spécialisée en droit du travail, droit de la famille, droit administratif, droit commercial."/>
+    <link rel="stylesheet" type="text/css" href="stylemf.css">
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+    <title>Avocat Charleroi Marie Fadeur Contacts</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+</head>
+
+<body class="">
+<div class=pusher>
+    <header class=header>
+        <a href="#" class="header__logo" id="header__logo"></a>
+        <nav class=menu>
+            <a href="index.html">Présentation</a>
+            <a href="bio.html">Activités préférentielles</a>
+            <a href="spec.html">Fiche d'informations légales</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class=container id="site__container">
+       <article class="site__image__c">
+            <div class="card__image">
+                <img src="images/mf1.jpg">
+                <!--</div class="card__body">-->
+                    <p class="contacts__c">
+                        <b>Cabinet principal :</b> Rue Léon Bernus, 66 à 6000 Charleroi<br>
+                        <b>Tél:</b> 071/32.74.58<br>
+                        <b>GSM (uniquement du lundi au vendredi de 9h à 18h) :</b> 0477/49.11.32<br>
+                        <b>Fax:</b> 071/ 31.13.37<br>
+                        <b>E-mail:</b> m.fadeur2@avocat.be <br>
+                        <b>Numéro d'entreprise et TVA :</b> 0816.311.715<br>
+                    </p>
+                <!--</div>-->
+            </div>
+        </article>
+        <div class="site__top__c">
+            <div class="site__text site__text__c">
+                <h1>Marie Fadeur Avocat</h1>
+                <br>
+                <p class="card__contact">
+                        <div class="icon1"></div><b>Cabinet principal :</b> Rue Léon Bernus, 66 à 6000 Charleroi<br><br>
+                        <div class="icon2"></div><b>Tél:</b> 071/32.74.58<br><br>
+                        <b>GSM (uniquement du lundi au vendredi de 9h à 18h) :</b> 0477/49.11.32<br><br>
+                        <b>Fax:</b> 071/ 31.13.37<br><br>
+                        <div class="icon3"></div><b>E-mail: </b> <a href="#" name="emailLink" id="emailLink" class="link__c"> m.fadeur2@avocat.be</a> <br><br>
+                        <b>Numéro d'entreprise et TVA :</b> 0816.311.715<br>
+                        <br>L’avocat est soumis à des règles déontologiques qui peuvent être consultées sur le lien suivant : <a onclick="window.open ('http://charleroi.obfg.be/deo/01.02.2015%20Code%20d%C3%A9ontologie%20version%20fran%C3%A7aise%20en%20vigueur%20au%2001.02.2015.pdf', ''); return false" href="javascript:void(0);" class="link__c"><i>Code de déontologie</i></a>
+                    </p>
+            </div>
+            
+        </div>
+    </div>
+    <br clear="both">
+
+</div>
+<footer class="footer">
+        <span class="copyright"></span>Copyright
+        <a href="https://www.linkedin.com/in/mariefadeur" target="_blank"><span class="icon icon--linkedin"></span></a>
+</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	/*alert("test");*/
+    $('#header__logo').click(function(e){
+        e.preventDefault();
+        $("body").toggleClass('wsidebar');
+    });
+    $('#site__container').click(function(e){
+        e.preventDefault();
+        $("body").removeClass('wsidebar');
+    });
+});
+
+$(function () {
+  $('#emailLink').on('click', function (event) {
+      event.preventDefault();
+    //alert("Huh");
+    var email = 'm.fadeur2@avocat.be';
+    var subject = "Demande d'informations";
+    window.location = 'mailto:' + email + '?subject=' + subject;
+  });
+});
+
+</script>
+        
+
+</body>
+
+</html>
