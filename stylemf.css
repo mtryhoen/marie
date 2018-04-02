@@ -272,6 +272,7 @@ p{
 .sub-menu li {
     display:block;
     font-size:16px;
+    line-height:26px
 }
 .sub-menu li a {
     padding:10px 30px;
