@@ -12,13 +12,25 @@
 
 <body>
     <header class=header>
-        <a href="#" class="header__logo" id="header__logo"></a>
-        <nav class=menu>
-            <a href="index.html">Présentation</a>
-            <a href="bio.html">Activités préférentielles</a>
-            <a href="spec.html">Fiche d'informations légales</a>
-            <a href="contact.html">Contact</a>
+    <a href="#" class="header__logo" id="header__logo"></a>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="index.html">Présentation</a></li>
+                <li>
+                    <a href="bio.html">Activités préférentielles</a>
+                        <ul class="sub-menu">
+                            <li><a href="social.html">Droit social</a></li>
+                            <li><a href="famille.html">Droit de la famille</a></li>
+                            <li><a href="contrats.html">Droit des contrats</a></li>
+                            <li><a href="admin.html">Droit administrtif</a></li>
+                        </ul>
+                </li>
+                <li><a href="spec.html">Fiche d'informations légales</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
         </nav>
+    </div>
     </header>
 <div class=container id="site__container">
     <article class="site__image">
